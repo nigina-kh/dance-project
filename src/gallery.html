@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Dance Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+<body>
+
+
+<header class="header fade-up">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__logo">Dance Studio</div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#classes">Classes</a></li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="products.html">Programs</a></li>
+        <li class="nav__item"><a class="nav__link" href="calendar.html">Calendar</a></li>
+        <li class="nav__item"><a class="nav__link" href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><nav class="breadcrumbs">
+  <div class="container">
+    <a href="index.html" class="breadcrumbs__link">Home</a>
+    <span class="breadcrumbs__separator">></span>
+    <span class="breadcrumbs__current">Gallery</span>
+  </div>
+</nav>
+
+
+<main class="main">
+  <section class="gallery">
+    <div class="container">
+
+      <h2 class="gallery__title fade-up">Gallery</h2>
+      <p class="gallery__description fade-up">
+        Moments from classes, rehearsals, and performances.
+      </p>
+
+      <!-- search input -->
+      <input
+        type="text"
+        class="gallery__search fade-up"
+        placeholder="Search gallery..."
+      />
+      <!-- filters -->
+<div class="gallery__filters fade-up">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="Studio">Studio</button>
+  <button class="filter-btn" data-filter="Hip-Hop">Hip-Hop</button>
+  <button class="filter-btn" data-filter="Ballet">Ballet</button>
+  <button class="filter-btn" data-filter="National">National</button>
+  <button class="filter-btn" data-filter="Performance">Performance</button>
+</div>
+      
+
+      <!-- gallery content loaded via API -->
+      <div class="gallery__grid" id="galleryGrid"></div>
+
+      <!-- pagination -->
+      <div class="gallery__pagination"></div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer fade-up">
+  <div class="container">
+    <p class="footer__text">© 2025 Dance Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/mobile.js"></script>
+
+</body>
+</html>

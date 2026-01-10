@@ -1,0 +1,27 @@
+@use '../variables' as *;
+
+.breadcrumbs {
+  position: absolute;
+  top: 7rem;
+  left: -0.1rem;
+  z-index: 20;
+  font-size: 0.9rem;
+  color: $color-text-main;
+  display: flex;
+  gap: 0.5rem;
+
+  a {
+    color: $color-accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color-accent;
+    }
+  }
+
+  @media (width <= 768px) {
+    top: 6rem;
+    display: none;  
+  }
+}

@@ -1,0 +1,122 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.products {
+  margin: 7rem 0;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.05rem;
+    color: $color-text-muted;
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @media (width <= 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.product-card {
+  background: rgb(255 255 255 / 75%);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgb(124 58 237 / 20%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgb(124 58 237 / 35%);
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    margin-bottom: 1.2rem;
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1.6rem;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #7c3aed, #9f7aea);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgb(124 58 237 / 40%);
+    }
+
+    &:disabled {
+      background: #d1d5db;
+      cursor: not-allowed;
+      box-shadow: none;
+      transform: none;
+    }
+
+    &.success {
+      background: #22c55e;
+      animation: enroll-pop 0.35s ease;
+    }
+  }
+
+  &__form {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+
+    input {
+      flex: 1;
+      padding: 0.6rem 0.75rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 0.9rem;
+    }
+
+    button {
+      padding: 0.6rem 1.1rem;
+      border-radius: 10px;
+      border: none;
+      background: $color-accent;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@keyframes enroll-pop {
+  0% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+

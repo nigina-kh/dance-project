@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts | Dance Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+
+<body>
+<nav class="breadcrumbs">
+  <div class="container">
+    <a href="index.html" class="breadcrumbs__link">Home</a>
+    <span class="breadcrumbs__separator">></span>
+    <span class="breadcrumbs__current">Contacts</span>
+  </div>
+</nav>
+<header class="header fade-up">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__logo">Dance Studio</div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#classes">Classes</a></li>
+        <li class="nav__item"><a class="nav__link" href="gallery.html">Gallery</a></li>
+        <li class="nav__item"><a class="nav__link" href="products.html">Programs</a></li>
+        <li class="nav__item"><a class="nav__link" href="calendar.html">Calendar</a></li>
+          <a class="nav__link nav__link--active" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="contacts">
+    <div class="container">
+
+      <h2 class="contacts__title fade-up">Get in Touch</h2>
+      <p class="contacts__description fade-up">
+        Have questions or want to join our studio?  
+        Leave a message and we’ll get back to you soon.
+      </p>
+
+      <div class="contacts__card fade-up">
+        <form class="contacts__form">
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="Anna Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="anna@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell us about yourself..."></textarea>
+          </div>
+
+          <button type="submit" class="contacts__button">
+            Send Message
+          </button>
+
+        </form>
+        <div class="contacts__map">
+  <iframe
+    src="https://www.google.com/maps?q=Tashkent&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+        
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer fade-up">
+  <div class="container">
+    <p class="footer__text">© 2025 Dance Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/animations.js"></script>
+<script src="js/mobile.js"></script>
+</body>
+</html>

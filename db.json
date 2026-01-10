@@ -1,0 +1,31 @@
+{
+  "gallery": [
+    { "id": 1, "title": "Studio 1", "image": "assets/images/studio1.jpg" },
+    { "id": 2, "title": "Studio 2", "image": "assets/images/studio2.jpg" },
+    { "id": 3, "title": "Studio 3", "image": "assets/images/studio3.jpg" },
+    { "id": 4, "title": "Studio 4", "image": "assets/images/studio4.jpg" },
+
+    { "id": 5, "title": "Hip-Hop 1", "image": "assets/images/hiphop1.jpg" },
+    { "id": 6, "title": "Hip-Hop 2", "image": "assets/images/hiphop2.jpg" },
+    { "id": 7, "title": "Hip-Hop 3", "image": "assets/images/hiphop3.jpg" },
+    { "id": 8, "title": "Hip-Hop 4", "image": "assets/images/hiphop4.jpg" },
+
+    { "id": 9, "title": "National Dance 1", "image": "assets/images/national1.jpg" },
+    { "id": 10, "title": "National Dance 2", "image": "assets/images/national2.jpg" },
+    { "id": 11, "title": "National Dance 3", "image": "assets/images/national3.jpg" },
+    { "id": 12, "title": "National Dance 4", "image": "assets/images/national4.jpg" },
+
+    { "id": 13, "title": "Performance 1", "image": "assets/images/performance1.jpg" },
+    { "id": 14, "title": "Performance 2", "image": "assets/images/performance2.jpg" },
+    { "id": 15, "title": "Performance 3", "image": "assets/images/performance3.jpg" },
+    { "id": 16, "title": "Performance 4", "image": "assets/images/performance4.jpg" },
+
+    { "id": 17, "title": "Ballet 1", "image": "assets/images/ballet1.jpg" },
+    { "id": 18, "title": "Ballet 2", "image": "assets/images/ballet2.jpg" },
+    { "id": 19, "title": "Ballet 3", "image": "assets/images/ballet3.jpg" },
+    { "id": 20, "title": "Ballet 4", "image": "assets/images/ballet4.jpg" }
+  ],
+  "videos": [
+    { "id": 1, "title": "Dance Promo", "video": "assets/video/dance.mp4" }
+  ]
+}

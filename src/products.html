@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs | Dance Studio</title>
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+<body>
+<nav class="breadcrumbs">
+  <div class="container">
+    <a href="index.html" class="breadcrumbs__link">Home</a>
+    <span class="breadcrumbs__separator">></span>
+    <span class="breadcrumbs__current">Programs</span>
+  </div>
+</nav>
+<header class="header fade-up">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav__logo">Dance Studio</div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#classes" class="nav__link">Classes</a></li>
+        <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li class="nav__item"><a href="products.html" class="nav__link nav__link--active">Programs</a></li>
+        <li class="nav__item"><a href="calendar.html" class="nav__link">Calendar</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="products">
+    <div class="container">
+      <h2 class="products__title fade-up">Our Programs</h2>
+      <p class="products__description fade-up">
+        Choose a program that fits your goals, experience, and rhythm of life.
+      </p>
+      
+      <div class="products__grid" id="productsGrid">
+        <article class="product-card fade-up" data-id="group-classes">
+          <h3 class="product-card__title">Group Classes</h3>
+          <p class="product-card__text">Regular group sessions in ballet, hip-hop, and national dance.</p>
+          <div class="product-card__meta">
+            <span>Total seats: <strong class="total-seats">20</strong></span>
+            <span>Free seats: <strong class="free-seats">20</strong></span>
+          </div>
+          <button class="product-card__btn">Enroll</button>
+        </article>
+
+        <article class="product-card fade-up" data-id="individual-training">
+          <h3 class="product-card__title">Individual Training</h3>
+          <p class="product-card__text">Personal coaching with professional instructors.</p>
+          <div class="product-card__meta">
+            <span>Total seats: <strong class="total-seats">5</strong></span>
+            <span>Free seats: <strong class="free-seats">5</strong></span>
+          </div>
+          <button class="product-card__btn">Enroll</button>
+        </article>
+
+        <article class="product-card fade-up" data-id="performance-programs">
+          <h3 class="product-card__title">Performance Programs</h3>
+          <p class="product-card__text">Preparation for competitions, festivals, and international performances.</p>
+          <div class="product-card__meta">
+            <span>Total seats: <strong class="total-seats">10</strong></span>
+            <span>Free seats: <strong class="free-seats">10</strong></span>
+          </div>
+          <button class="product-card__btn">Enroll</button>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer fade-up">
+  <div class="container">
+    <p class="footer__text">© 2025 Dance Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/mobile.js"></script>
+</body>
+</html>
+
