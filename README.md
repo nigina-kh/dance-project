@@ -66,7 +66,6 @@ python init_db.py
 python app.py
 
 
-## Backend will run at http://127.0.0.1:5000/, and products.html will fetch programs and enrollments from this API.
 
 ## **Frontend Setup**
 Compile SCSS files to CSS (Autocode or your build setup handles this):
